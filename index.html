@@ -1,0 +1,32 @@
+<html>
+<title>Family Book</title>
+<body>
+  <h1>Family Book</h1>
+   <hr>
+  <img id="Family_Photo" src="Family Photo.jpg">;
+ <h3 id="one">1.Our Family Book</h3>
+ <button type="button" onclick="family()">Next</button>
+  <hr>
+ <script>
+   var name=[
+       "2 My father  (Dhaval Patel)",
+       "3 My Mother  (Mittal Patel)",
+       "4 Me (Kush Patel)",
+
+   ];
+    var image=[
+     "Papa.jpg",
+     "Mumma.jpg",
+     "Kush.jpg",
+    ];
+     var i=0;
+     function family(){
+         document.getElementById("one").innerHTML=name[i];
+         document.getElementById("Family_Photo").src=image[i];
+         i++;
+         if(i==3){
+             i=0;
+         }}
+</script>
+</body>
+</html>
